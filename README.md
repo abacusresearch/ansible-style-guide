@@ -1,9 +1,10 @@
 # ansible-style-guide
 
-Presentation in 
-https://github.com/abacusresearch/ansible-style-guide/blob/main/Ansible_Style_Guide_CfgMgmtCamp2026.pdf
+Presentation was done on the [CfgMgmtCamp 2026](https://cfgmgmtcamp.org/ghent2026/) conference:
 
-https://cfp.cfgmgmtcamp.org/ghent2026/talk/NNFGN9/
+[Ansible Style Guide,presentation](https://github.com/abacusresearch/ansible-style-guide/blob/main/Ansible_Style_Guide_CfgMgmtCamp2026.pdf)
+
+[Page of this talk on CfgMgmtCamp website](https://cfp.cfgmgmtcamp.org/ghent2026/talk/NNFGN9/)
 
 # Survey, question on certain questions of code style for Ansible
 
@@ -25,7 +26,7 @@ So below is just fine:
 
 `apache_package_name: httpd`
 
-3. What is the preferred option for "external" quotes?
+3. What is the preferred option when it comes to "external" quotes?
 
 Community answer: Double quotes (`"`)
 
@@ -65,7 +66,7 @@ Community answer: YAML
 
 ### Questions where majority chooses one option over the other one but it is (almost) a tie
 
-7. Is it good practice to prefix internal variables with double undescores and use r_ prefix for variables used in "register" task attribute?
+7. Is it good practice to prefix internal variables with double undescores (`__`) and/or use `r_` prefix for variables used in `register` task attribute?
 
 Community answer: no
 
@@ -77,6 +78,6 @@ Community answer: Dot notation is preferred over bracket notation for dictionari
 
 Other notes: 
 
-- `meta/main.yml` is used and maintained
+- `meta/main.yml` file inside of Ansible roles is used and maintained by people in Ansible community
 
-- `meta/argument_specs.yml` is used and maintained
+- `meta/argument_specs.yml` file inside of Ansible roles is used and maintained by people in Ansible community
